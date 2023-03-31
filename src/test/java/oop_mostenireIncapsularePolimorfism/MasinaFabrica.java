@@ -1,4 +1,4 @@
-package oop_mostenireIncapsulare;
+package oop_mostenireIncapsularePolimorfism;
 
 public class MasinaFabrica {
 
@@ -16,6 +16,13 @@ public class MasinaFabrica {
     //in java sunt 3 tipuri de access control: public, private, protected
     //public => este vizibil peste tot in acest proiect
     //private => este vizibl doar in clasa unde a fost declarat
+
+
+    //=======================================================
+    //Polimorfism = procesul prin care o metoda poate avea implementari diferite
+    //Polimorfismul este de 2 feluri: dinamic(override) si static(overloading)
+    //polimorfismul dinamic = intr-o ierarhie de clase obtinute prin mostenire o metoda poate avea implementari diferite(apare cand ii vorba de mostenire)
+    //polimorfismul static = o metoda poate avea forme diferite pe baza numarului de parametrii sau tipul acestora
 
     private String brand;
     private String model;
@@ -37,6 +44,11 @@ public class MasinaFabrica {
         System.out.println("Puterea este "+putere);
         System.out.println("Anul este "+an);
         System.out.println("Pretul este "+pret);
+    }
+
+    //polimorfism dinamic
+    public void pornesteMasina(){
+        System.out.println("Masina se porneste daca introducem cheia in contact");
     }
 
     public String getBrand() {

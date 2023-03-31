@@ -1,4 +1,4 @@
-package oop_mostenireIncapsulare;
+package oop_mostenireIncapsularePolimorfism;
 
 import java.util.List;
 
@@ -9,6 +9,10 @@ public class Audi extends MasinaFabrica{
     public Audi(String brand, String model, String putere, Integer an,Integer pret, List<String> dotariInterioare) {
         super(brand, model, putere, an, pret);
         this.dotariInterioare = dotariInterioare;
+    }
+
+    public void pornesteMasina(){
+        System.out.println("Masinile Audi se pornesc doar din buton");
     }
 
     public void infoAudi(){
